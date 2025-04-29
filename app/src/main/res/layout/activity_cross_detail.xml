@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cross_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xcstats.views.Activites.CrossDetailActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/training_logdetail">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="#CB671C"
+            android:layout_height="?attr/actionBarSize">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_bcckhome"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:background="@drawable/top_back_icon" />
+
+
+            <com.xcstats.views.custom.Textview_Simple
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="Cross Country Goal Detail"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/training_logdetail">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+        <com.xcstats.views.custom.Textview_Light
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Event:"
+            android:textColor="#000"
+            android:padding="8dp"
+            android:textSize="16dp"
+            android:id="@+id/txt_events"
+            android:layout_below="@+id/training_logs"
+            android:background="@drawable/textbutton_shape"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/relative_selectmeets"
+            android:layout_below="@+id/txt_events">
+
+
+        <com.xcstats.views.custom.Textview_Light
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_event"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"
+            android:text=""/>
+
+
+        </RelativeLayout>
+
+
+            <com.xcstats.views.custom.Textview_Light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Course:"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:id="@+id/txt_course"
+                android:layout_below="@+id/relative_selectmeets"
+                android:background="@drawable/textbutton_shape"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/relative_selectmets"
+                android:layout_below="@+id/txt_course">
+
+
+                <com.xcstats.views.custom.Textview_Light
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_courses"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                     />
+
+
+            </RelativeLayout>
+
+
+
+
+            <com.xcstats.views.custom.Textview_Light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Date:"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:id="@+id/txt_date"
+                android:layout_below="@+id/relative_selectmets"
+                android:background="@drawable/textbutton_shape"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/relative_selectdates"
+                android:layout_below="@+id/txt_date">
+
+
+                <com.xcstats.views.custom.Textview_Light
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_dates"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:textSize="16dp"
+                    android:text=""/>
+
+
+            </RelativeLayout>
+
+
+            <com.xcstats.views.custom.Textview_Light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Personal Record:"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:id="@+id/txt_records"
+                android:layout_below="@+id/relative_selectdates"
+                android:background="@drawable/textbutton_shape"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/relative_selectrecords"
+                android:layout_below="@+id/txt_records">
+
+
+                <com.xcstats.views.custom.Textview_Light
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_workrecord"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:text=""/>
+
+
+            </RelativeLayout>
+
+
+
+            <com.xcstats.views.custom.Textview_Light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Expected Distance:"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:id="@+id/txt_distance"
+                android:layout_below="@+id/relative_selectrecords"
+                android:background="@drawable/textbutton_shape"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/relative_selectdistance"
+                android:layout_below="@+id/txt_distance">
+
+
+                <com.xcstats.views.custom.Textview_Light
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_distances"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:textSize="16dp"
+                    android:text="">
+
+             </com.xcstats.views.custom.Textview_Light>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    style="@style/spinner"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:id="@+id/spinner_distance"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+
+
+                </Spinner>
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/relative_goals"
+                android:layout_marginLeft="5dp">
+
+
+                <com.xcstats.views.custom.Textview_Light
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Enter Goal:"
+                    android:layout_toLeftOf="@+id/righttwoLL"
+                    android:textColor="#000"
+                    android:padding="8dp"
+                    android:textSize="16dp"
+                    android:id="@+id/txt_unit"
+                    android:background="@drawable/textbutton_shape"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/righttwoLL"
+                    android:layout_alignParentRight="true"
+                    android:weightSum="2"
+                    android:layout_height="50dp">
+
+
+
+
+
+                    <com.xcstats.views.custom.Edittext_light
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:hint="Min"
+                        android:id="@+id/txt_minutes"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:background="@drawable/textbutton_shape"
+                        android:layout_alignParentRight="true" />
+
+
+                    <com.xcstats.views.custom.Edittext_light
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:layout_marginTop="10dp"
+                        android:hint="Sec"
+                        android:id="@+id/txt_sec"
+                        android:gravity="center"
+
+                        android:inputType="number"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/textbutton_shape" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+            <com.xcstats.views.custom.Textview_Light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:text="Pace:"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:id="@+id/txt_pace"
+                android:layout_below="@+id/relative_goals"
+                android:background="@drawable/textbutton_shape"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/relative_selectpace"
+                android:layout_below="@+id/txt_pace">
+
+
+                <com.xcstats.views.custom.Textview_Light
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_pac"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:textSize="16dp"
+                    android:text=""/>
+
+
+            </RelativeLayout>
+
+
+
+
+            <com.xcstats.views.custom.Textview_Light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Notes:"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:id="@+id/txt_notes"
+                android:padding="10dp"
+                android:layout_below="@+id/training_logs"
+                android:background="@drawable/textbutton_shape"/>
+
+
+
+              <com.xcstats.views.custom.Edittext_light
+                  android:layout_width="match_parent"
+                  android:layout_height="60dp"
+                  android:hint="Add note"
+                  android:id="@+id/edit_notes"
+                  android:layout_marginRight="15dp"
+                  android:layout_marginLeft="15dp"
+                  android:scrollbars="vertical"
+                  android:inputType="textMultiLine"
+                  android:gravity="start"
+                   android:padding="8dp"
+                  android:background="@drawable/textbutton_shape"
+                  android:cursorVisible="true" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+
+                    <com.xcstats.views.custom.Button_simple
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:text="SUBMIT"
+                        android:layout_weight="1"
+                        android:id="@+id/btn_submitGoal"
+                        android:textColor="#fff"
+                        android:layout_marginTop="30dip"
+                        android:layout_marginLeft="15dip"
+                        android:background="@drawable/selector_button"/>
+
+                    <com.xcstats.views.custom.Button_simple
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:text="DELETE"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:id="@+id/btn_delete"
+                        android:textColor="#fff"
+                        android:layout_marginTop="30dip"
+                        android:layout_marginLeft="15dip"
+                        android:background="@drawable/selector_button"/>
+
+
+                    <com.xcstats.views.custom.Button_simple
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:text="CANCEL"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/btn_cancel"
+                        android:textColor="#fff"
+                        android:layout_marginTop="30dip"
+                        android:layout_marginLeft="15dip"
+                        android:background="@drawable/selector_button"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

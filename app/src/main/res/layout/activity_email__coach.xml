@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_email__coach"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xcstats.views.Activites.EmailCoachActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/training_logs">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="#CB671C"
+            android:layout_height="?attr/actionBarSize">
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_backhome"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@drawable/home_icon" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:text="Email Coach"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <com.xcstats.views.custom.Textview_Simple
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#000"
+        android:layout_marginTop="20dp"
+        android:id="@+id/select_coach"
+        android:layout_below="@+id/training_logs"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:text="Select Coaches to Notify"/>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/select_coach">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                 <androidx.recyclerview.widget.RecyclerView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/recycler_coach">
+
+
+                 </androidx.recyclerview.widget.RecyclerView>
+
+               </LinearLayout>
+
+            <com.xcstats.views.custom.Textview_Light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Subject:"
+                android:textColor="#000"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:id="@+id/txt_work"
+                android:layout_below="@+id/training_logs"
+                android:background="@drawable/textbutton_shape"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/relative_select1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/black_edit"
+                android:layout_below="@+id/txt_workout">
+
+
+                <com.xcstats.views.custom.Edittext_light
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="start"
+                    android:textSize="15dp"
+                    android:hint="Write subject"
+                    android:layout_marginLeft="5dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/edit_subjects"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+
+
+
+
+            <com.xcstats.views.custom.Textview_Light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Message:"
+                android:textColor="#000"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:id="@+id/txt_message"
+                android:layout_below="@+id/training_logs"
+                android:background="@drawable/textbutton_shape"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/relative_selectmessage"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/black_edit"
+                android:layout_below="@+id/txt_workout">
+
+
+                <com.xcstats.views.custom.Edittext_light
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:hint="Write message."
+                    android:textSize="15dp"
+                    android:inputType="textMultiLine"
+                    android:scrollbars="vertical"
+                    android:gravity="start"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:id="@+id/edit_message" />
+
+
+
+                <com.xcstats.views.custom.Textview_Light
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/originalmsg"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+
+                    android:textColor="#000"
+                    android:id="@+id/tt"
+                    android:gravity="center_vertical"
+
+                    android:textSize="16dp" />
+
+
+                <com.xcstats.views.custom.Textview_Light
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tt"
+                    android:id="@+id/tvBody"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:textColor="#000"
+                    android:gravity="center_vertical"
+                    android:textSize="16dp" />
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SEND EMAIL"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/btn_done"
+                android:textColor="#fff"
+                android:layout_marginTop="30dip"
+                android:layout_marginLeft="100dip"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/selector_button"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

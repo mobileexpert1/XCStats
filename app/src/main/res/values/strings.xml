@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">XCStats</string>
+    <string name="Signup">  Sign Up</string>
+    <string name="Track">Track</string>
+    <string name="field"><u>Your Current PR\'s And SR\'s</u></string>
+    <string name="viewTrack"><u>View Track Schedule</u></string>
+    <string name="goals"><u>Review Past Goals And Results</u></string>
+    <string name="originalmsg"><u>Original coach message below:</u></string>
+    <string name="delete">Are You Sure?</string>
+    <string name="fcm_token">FCM Token: %s</string>
+    <string name="camera">Camera</string>
+    <string name="done">Done</string>
+    <string name="name"><a href=" ">name</a></string>
+
+    <string-array name="img">
+        <item>@drawable/doc</item>
+        <item>@drawable/generic</item>
+        <item>@drawable/html</item>
+        <item>@drawable/image</item>
+        <item>@drawable/kmz</item>
+        <item>@drawable/odf</item>
+        <item>@drawable/pdf</item>
+        <item>@drawable/ppt</item>
+        <item>@drawable/xls</item>
+        <item>@drawable/zip</item>
+
+    </string-array>
+
+</resources>
+
+

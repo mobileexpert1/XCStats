@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "630074162166",
+    "firebase_url": "https://xcstats-6bf11.firebaseio.com",
+    "project_id": "xcstats-6bf11",
+    "storage_bucket": "xcstats-6bf11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630074162166:android:2520a19b519618bb04a5d7",
+        "android_client_info": {
+          "package_name": "com.xcstats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630074162166-quq6nli5nfcujcpnu1dsnbc3shqovn5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsWoP9mi9_VbixKfLPeet1Pkvt1v7gcFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630074162166-quq6nli5nfcujcpnu1dsnbc3shqovn5h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "630074162166-lv6u4hccspquelb3gh3nkcgre17fgngb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.xcstats.mobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

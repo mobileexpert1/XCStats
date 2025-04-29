@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xcstats.views.Activites.TrainingLogLeadBoard">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/plan_logs">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="#CB671C"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_bckTrainingLog"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:background="@drawable/top_back_icon" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:text="Training Log Leaderboard"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl"
+        android:layout_below="@+id/plan_logs"
+        android:layout_margin="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000"
+            android:id="@+id/tvMsgs"
+            android:textSize="16dp"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_below="@+id/rl"
+        android:layout_height="45dp"
+        android:id="@+id/linear_bar"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Rank"
+            android:gravity="center"
+            android:layout_weight="0.7"
+            android:id="@+id/txt_rank"
+            android:textColor="#fff"
+            android:layout_gravity="center" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Athlete"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:id="@+id/txt_athlete"
+            android:layout_weight="1.5"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Gr"
+            android:id="@+id/txt_gr"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_weight="0.8"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:id="@+id/txt_metric"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_lead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_bar">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_bar"
+        android:text="No athletes meet these criteria"
+        android:visibility="gone"
+        android:id="@+id/txterrormsg"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+
+
+
+
+
+</RelativeLayout>

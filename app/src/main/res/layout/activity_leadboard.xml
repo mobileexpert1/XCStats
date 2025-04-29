@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xcstats.views.Activites.LeadboardActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/plan_logs">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="#CB671C"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_bckTrainingLog"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:background="@drawable/top_back_icon" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:text="Logs Leaderboard Form"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl"
+        android:layout_below="@+id/plan_logs"
+        android:layout_margin="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:id="@+id/tvMsg"
+            android:textSize="16dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/rlMetricReport"
+        android:layout_below="@+id/rl">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#CB671C"
+            android:textSize="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Select Metric"/>
+
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="40dp"
+            android:weightSum="1.2"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                 android:visibility="gone"
+                android:id="@+id/radioButton1"
+                android:layout_gravity="start"
+                android:checked="false"
+                android:textColor="#000000"
+                android:layout_weight="0.4"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:id="@+id/radioButton2"
+                android:layout_gravity="start"
+                android:checked="false"
+                android:textColor="#000000"
+
+                android:textSize="16dp"
+                android:layout_weight="0.4" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:id="@+id/radioButton3"
+                android:layout_gravity="start"
+                android:checked="false"
+                android:textColor="#000000"
+                android:layout_weight="0.4"
+                android:textSize="16dp" />
+
+        </RadioGroup>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlOpt"
+            android:layout_below="@+id/radioGroup">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#CB671C"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvFilter"
+                android:textSize="16dp"
+                android:text="Optional Filters"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/tvFilter"
+                android:weightSum="2">
+
+
+                <Spinner
+                    android:id="@+id/spinner_gender"
+                    style="@style/spinner_style"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/tvFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="3dp">
+
+
+                </Spinner>
+
+
+                <Spinner
+                    android:id="@+id/spinner_grade"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="5dp">
+
+
+                </Spinner>
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:layout_below="@+id/rlOpt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE  LEADERBOARD"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn_createLeader"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="60dip"
+            android:background="@drawable/selector_button"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

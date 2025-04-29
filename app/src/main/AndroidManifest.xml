@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xcstats">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<!--    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />-->
+<!--    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />-->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:name=".views.custom.MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ViewTrack_WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewTrackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.Activites.showHeartrateFormActivity"
+            android:exported="false" />
+        <activity android:name=".views.Activites.FullImage" />
+        <activity android:name=".views.Activites.CoachNotesActivity" />
+        <activity android:name=".views.Activites.WebViewActivity" />
+        <activity android:name=".views.Activites.CoachAnnouncementsActivity" />
+        <activity android:name=".views.Activites.Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".views.firebase.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".views.Activites.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".views.Activites.RegisterationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".views.Activites.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".views.Activites.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Activites.ForgotPassword"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".views.Activites.ParentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Activites.TrainingLogsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemestatus" />
+        <activity
+            android:name=".views.Activites.TrainingLogEntryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemestatus"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".views.Activites.PlannedAbsence"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemestatus" />
+        <activity
+            android:name=".views.Activites.EmailCoachActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemestatus"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".views.Activites.PhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Activites.TrackFieldActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemestatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".views.Activites.GoalDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemestatus" />
+        <activity
+            android:name=".views.Activites.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemestatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".views.Activites.ParentsLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Activites.AddPlanAbsenceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemestatus" />
+        <activity
+            android:name=".views.Activites.CurrentPrActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemestatus" />
+        <activity
+            android:name=".views.Activites.ReviewPastGoal"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemestatus" />
+        <activity
+            android:name=".views.Activites.CrossCountryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemestatus" />
+        <activity
+            android:name=".views.Activites.CrossDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemestatus"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".views.Activites.UploadImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.multiImagePicker.MultipleImages"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Activites.TeamDocumentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemestatus" />
+        <activity
+            android:name=".views.Activites.LeadboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.Activites.TrainingLogLeadBoard"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d2fecb6296849eb6cec25c4eeb0fa7dac5decb86" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.xcstats.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

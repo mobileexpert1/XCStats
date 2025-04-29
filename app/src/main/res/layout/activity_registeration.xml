@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registeration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/splash"
+    tools:context="com.xcstats.views.Activites.RegisterationActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/training_logs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1Affffff">
+
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/top_back_icon"
+                android:padding="10dp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="Registration"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:id="@+id/xc_logo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/relative_logo"
+            android:layout_marginBottom="40dp"
+            android:padding="20dp"
+            android:src="@drawable/logo" />
+
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xc_logo"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/relative_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/enter_line">
+
+
+                <ImageView
+                    android:id="@+id/graduation_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="15dp"
+                    android:src="@drawable/graduation_small" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/graduation_img">
+
+                    <Spinner
+                        android:id="@+id/spinner_enterschool"
+                        style="@style/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp">
+
+
+                    </Spinner>
+
+                    <TextView
+                        android:id="@+id/spTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/graduation_img"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:paddingRight="15dp"
+                        android:text="Select School"
+                        android:textColor="#fff"
+                        android:textSize="16dp"
+                        android:visibility="visible" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spindrop"
+                        android:paddingRight="10dp" />
+
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <com.xcstats.views.custom.Edittext_light
+                    android:id="@+id/edit_regcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/enter_line"
+                    android:drawableLeft="@drawable/lock"
+                    android:drawablePadding="10dp"
+                    android:hint="Registration Code"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="16dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/ageCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I am 13 or older"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:buttonTint="#FFFFFF" />
+            </RelativeLayout>
+
+
+
+            <com.xcstats.views.custom.Button_simple
+                android:id="@+id/btn_done_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/selector_button"
+                android:text="DONE"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

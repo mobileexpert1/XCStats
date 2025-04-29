@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#262A37</item>
+        <item name="colorPrimaryDark">#262A37</item>
+        <item name="colorAccent">#dc701e</item>
+
+
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppThemestatus" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#dc701e</item>
+        <item name="colorPrimaryDark">#dc701e</item>
+        <item name="colorAccent">#dc701e</item>
+
+
+    </style>
+
+    <style name="AppThemetopbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#80000000</item>
+        <item name="colorPrimaryDark">#80000000</item>
+        <item name="colorAccent">#80000000</item>
+
+
+    </style>
+
+
+    <style name="MyEditTextTheme" parent="Widget.AppCompat.EditText">
+        <!-- Used for the bottom line when not selected / focused -->
+        <item name="colorControlNormal">#ffffff</item>
+        <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
+    </style>
+
+    <style name="spinner" parent="android:Theme">
+
+        <item name="android:backgroundTint">#000</item>
+        <item name="android:textColor">#000</item>
+
+
+    </style>
+
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gradient_spinner</item>
+        <item name="android:layout_margin">13dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:popupBackground">#DFFFFFFF</item>
+    </style>
+
+
+
+    <style name="fontBold">
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="fontNormal">
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cross_country"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xcstats.views.Activites.CrossCountryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cross_country">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="#CB671C"
+            android:layout_height="?attr/actionBarSize">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_crosshome"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:background="@drawable/home_icon" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:text="Cross Country Goals"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cross_goals"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/cross_country"
+        android:background="#000">
+
+        <com.xcstats.views.custom.Textview_Simple
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.1"
+            android:text="Date"
+            android:textColor="#fff"
+            android:textSize="14dp" />
+
+
+        <com.xcstats.views.custom.Textview_Simple
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Event"
+            android:gravity="center_horizontal"
+            android:id="@+id/txt_reason"
+            android:textColor="#fff"
+            android:textSize="14dp" />
+
+
+        <com.xcstats.views.custom.Textview_Simple
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:text="Course"
+            android:gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textSize="14dp" />
+
+        <com.xcstats.views.custom.Textview_Simple
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="Goal"
+            android:textColor="#fff"
+            android:textSize="14dp" />
+
+
+        <com.xcstats.views.custom.Textview_Simple
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="Pace"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="14dp" />
+
+
+
+        <com.xcstats.views.custom.Textview_Simple
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:text="Time"
+            android:textColor="#fff"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Recycle_cross"
+        android:layout_below="@+id/cross_goals">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

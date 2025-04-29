@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_training_logentry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xcstats.views.Activites.TrainingLogEntryActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/training_logs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#CB671C">
+
+
+            <ImageView
+                android:id="@+id/image_bckhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/top_back_icon"
+                android:padding="10dp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="Training Log Entry"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/training_logs">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <com.xcstats.views.custom.Textview_Light
+                android:id="@+id/txt_workout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/textbutton_shape"
+                android:padding="8dp"
+                android:text="Workout:"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_workout">
+
+
+                <Spinner
+                    android:id="@+id/select_spinner_workout"
+                    style="@style/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp">
+
+
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/workoutTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/graduation_img"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:text="Select Predefined workout or.."
+
+                    android:textSize="16dp"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/spiiii" />
+
+            </FrameLayout>
+
+
+            <!-- <RelativeLayout
+                 android:id="@+id/relative_selectmeets"
+                 android:layout_width="match_parent"
+                 android:layout_height="35dp"
+                 android:layout_below="@+id/txt_workout">
+
+
+                 <com.xcstats.views.custom.Textview_Light
+                     android:id="@+id/workoutTV"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="20dp"
+                     android:layout_marginTop="10dp"
+                     android:hint=""
+                     android:textSize="16dp" />
+
+
+                 <com.xcstats.views.custom.NDSpinner
+                     android:id="@+id/select_spinner_workout"
+                     android:layout_width="match_parent"
+                     android:layout_height="35dp"
+                     android:layout_alignParentBottom="true"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentStart="true"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="20dp">
+
+
+                 </com.xcstats.views.custom.NDSpinner>
+
+
+             </RelativeLayout>
+ -->
+
+            <com.xcstats.views.custom.Textview_Light
+                android:id="@+id/txt_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/textbutton_shape"
+                android:padding="8dp"
+                android:text="Name:"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+
+                <EditText
+                    android:id="@+id/edit_example"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:hint="... enter workout name"
+                    android:inputType="text"
+                    android:textSize="14dp" />
+
+
+                <ImageView
+                    android:id="@+id/cancelWorkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/cancel" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+
+                <com.xcstats.views.custom.Textview_Light
+                    android:id="@+id/txt_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/rightLL"
+                    android:background="@drawable/textbutton_shape"
+                    android:padding="5dp"
+                    android:text="Time:"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/rightLL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:weightSum="2">
+
+
+                    <EditText
+                        android:id="@+id/minutesET"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textbutton_shape"
+                        android:hint="Min"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center" />
+
+
+                    <EditText
+                        android:id="@+id/secondET"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textbutton_shape"
+                        android:hint="Sec"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <com.xcstats.views.custom.Textview_Light
+                    android:id="@+id/txt_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textbutton_shape"
+                    android:padding="8dp"
+                    android:text="Distance:"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+
+                    <EditText
+                        android:id="@+id/edit_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:cursorVisible="true"
+                        android:hint="Enter distance"
+                        android:inputType="numberDecimal"
+                        android:textSize="14dp" />
+
+
+                    <ImageView
+                        android:id="@+id/distanceCAN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/cancel" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+
+                <com.xcstats.views.custom.Textview_Light
+                    android:id="@+id/txt_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/righttwoLL"
+                    android:background="@drawable/textbutton_shape"
+                    android:padding="5dp"
+                    android:text="Unit:"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/righttwoLL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:descendantFocusability="afterDescendants"
+                    android:weightSum="2">
+
+
+                    <RelativeLayout
+                        android:id="@+id/FrameMI"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/textbutton_shape">
+
+
+                        <com.xcstats.views.custom.Textview_Light
+                            android:id="@+id/txtMI"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:background="#dc701e"
+                            android:gravity="top"
+                            android:text="Mi"
+                            android:textAlignment="center" />
+
+
+                        <ImageView
+                            android:id="@+id/tickMI"
+                            android:layout_width="10dp"
+                            android:layout_height="12dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="17dp"
+                            android:background="@drawable/tick" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/frameKM"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/textbutton_shape"
+                        android:descendantFocusability="afterDescendants">
+
+
+                        <com.xcstats.views.custom.Textview_Light
+                            android:id="@+id/txtKM"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:gravity="top"
+                            android:text="Km"
+                            android:textAlignment="center" />
+
+                        <ImageView
+                            android:id="@+id/imageTk"
+                            android:layout_width="10dp"
+                            android:layout_height="12dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="17dp"
+                            android:background="@drawable/tick"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp">
+
+
+                <com.xcstats.views.custom.Textview_Light
+                    android:id="@+id/txt_effort"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/rightthirdLL"
+                    android:background="@drawable/textbutton_shape"
+                    android:padding="5dp"
+                    android:text="Effort:"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/rightthirdLL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:weightSum="2">
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/textbutton_shape">
+
+                        <com.xcstats.views.custom.Textview_Light
+                            android:id="@+id/txt_count"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="1"
+                            android:textAlignment="center" />
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_gravity="right"
+                            android:paddingTop="2dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="2dp">
+
+                            <ImageView
+                                android:id="@+id/up_arrow"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/uparrow" />
+
+                            <ImageView
+                                android:id="@+id/down_arrow"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:src="@drawable/downarrow" />
+                        </RelativeLayout>
+
+
+                    </FrameLayout>
+
+
+                    <com.xcstats.views.custom.Textview_Light
+                        android:id="@+id/textView_min"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textbutton_shape"
+                        android:gravity="center"
+                        android:hint="Min"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp">
+
+
+                <LinearLayout
+                    android:id="@+id/rightthirdL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:weightSum="2">
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/textbutton_shape">
+
+                        <com.xcstats.views.custom.Textview_Light
+                            android:id="@+id/feel_txt"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:hint="1"
+                            android:textAlignment="center" />
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_gravity="right"
+                            android:paddingTop="2dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="2dp">
+
+                            <ImageView
+                                android:id="@+id/up_feel"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/uparrow" />
+
+                            <ImageView
+                                android:id="@+id/down_feel"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:src="@drawable/downarrow" />
+                        </RelativeLayout>
+                    </FrameLayout>
+
+
+                    <com.xcstats.views.custom.Textview_Light
+
+                        android:id="@+id/textView_feel"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textbutton_shape"
+                        android:gravity="center"
+                        android:hint="Terrible"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <com.xcstats.views.custom.Textview_Light
+                    android:id="@+id/txt_fel"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toStartOf="@+id/rightthirdL"
+                    android:layout_toLeftOf="@+id/rightthirdL"
+                    android:background="@drawable/textbutton_shape"
+                    android:padding="5dp"
+                    android:text="Feel:"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+
+            <com.xcstats.views.custom.Textview_Light
+                android:id="@+id/txt_note"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/training_logs"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/textbutton_shape"
+                android:padding="5dp"
+                android:text="Notes:"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+
+            <com.xcstats.views.custom.Edittext_light
+                android:id="@+id/notesET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/textbutton_shape"
+                android:gravity="start"
+                android:hint="Add notes"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:scrollbarStyle="insideInset"
+                android:imeOptions="actionDone"
+                android:scrollbars="vertical"
+                android:textAlignment="textStart"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <com.xcstats.views.custom.Textview_Light
+                android:id="@+id/txtLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/training_logs"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:padding="6dp"
+                android:text=""
+                android:textColor="#0000FF"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlUploadImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/upload_image_bg"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_cameraView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/caldroid_white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivCamera"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/camera_icon" />
+
+                    <com.xcstats.views.custom.Textview_Light
+                        android:id="@+id/txt_AddImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="Add Image"
+                        android:textAlignment="center"
+                        android:textColor="@color/color_black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toEndOf="@+id/ll_cameraView"
+                    android:layout_toRightOf="@+id/ll_cameraView"
+                    android:orientation="horizontal" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlUploadImages"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="30dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_button"
+                    android:text="SUBMIT"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="30dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_button"
+                    android:text="DELETE"
+                    android:textColor="#fff"
+                    android:visibility="invisible" />
+
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="30dip"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_button"
+                    android:text="CANCEL"
+                    android:textColor="#fff" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp">
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

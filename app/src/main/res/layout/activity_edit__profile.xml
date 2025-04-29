@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit__profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xcstats.views.Activites.EditProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/plan_logs">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="#CB671C"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_bckhome"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:background="@drawable/home_icon" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:text="Edit Profile"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_txt"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/plan_logs">
+
+        <com.xcstats.views.custom.Textview_Simple
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:id="@+id/txt_firstname"
+            android:text=""/>
+
+        <com.xcstats.views.custom.Textview_Simple
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/txt_firstname"
+            android:textSize="18dp"
+            android:id="@+id/txt_lastname"
+            android:text=" "/>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_txt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.xcstats.views.custom.Edittext_light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Email"
+                android:maxLines="1"
+                android:inputType="text"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:id="@+id/edit_email"
+                android:layout_below="@+id/training_logs"
+                android:background="@drawable/textbutton_shape"/>
+
+            <com.xcstats.views.custom.Edittext_light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Password"
+                android:maxLines="1"
+                android:inputType="text"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:id="@+id/Textpassword"
+                android:background="@drawable/textbutton_shape"/>
+
+            <com.xcstats.views.custom.Edittext_light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Street"
+                android:maxLines="1"
+                android:inputType="text"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:id="@+id/edit_street"
+                android:background="@drawable/textbutton_shape"/>
+
+            <com.xcstats.views.custom.Edittext_light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="City"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+                android:id="@+id/edit_city"
+                android:background="@drawable/textbutton_shape"/>
+
+            <com.xcstats.views.custom.Edittext_light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="State"
+                android:textColor="#000"
+                android:maxLines="1"
+                android:inputType="text"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:id="@+id/edit_state"
+                android:background="@drawable/textbutton_shape"/>
+
+            <com.xcstats.views.custom.Edittext_light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Zip"
+                android:textColor="#000"
+                android:maxLines="1"
+                android:inputType="text"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:id="@+id/edit_zip"
+                android:background="@drawable/textbutton_shape"/>
+
+            <com.xcstats.views.custom.Edittext_light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Home Phone(XXXXXXXXXX)"
+                android:textColor="#000"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:id="@+id/edit_homephone"
+                android:background="@drawable/textbutton_shape"/>
+
+            <com.xcstats.views.custom.Edittext_light
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:hint="Cell Phone(XXXXXXXXXX)"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:id="@+id/edit_cellphone"
+                android:layout_below="@+id/training_logs"
+                android:background="@drawable/textbutton_shape"/>
+
+            <RelativeLayout
+                android:id="@+id/cell_provider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@drawable/textbutton_shape"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="8dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.xcstats.views.custom.Textview_Light
+                        android:id="@+id/txtCellProvider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textSize="16dp"
+                        android:textColor="#000" />
+
+                    <com.xcstats.views.custom.NDSpinner
+                        android:id="@+id/spinner_cellProvider"
+                        style="@style/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp">
+
+                    </com.xcstats.views.custom.NDSpinner>
+
+
+                    <TextView
+                        android:id="@+id/txtCellText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="30dp"
+                        android:text=""
+                        android:textColor="#fff" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/drop_down"
+                        android:paddingRight="10dp" />
+
+                </FrameLayout>
+            </RelativeLayout>
+
+            <com.xcstats.views.custom.Button_simple
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_submitEP"
+                android:layout_marginRight="70dp"
+                android:layout_gravity="center"
+                android:hint="SUBMIT"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@android:color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/selector_button"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

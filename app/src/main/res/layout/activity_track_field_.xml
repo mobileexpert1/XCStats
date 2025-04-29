@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_track_field_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xcstats.views.Activites.TrackFieldActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/plan_logs">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/training_logs"
+            android:background="#CB671C"
+            android:layout_height="?attr/actionBarSize">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_bckhome"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:background="@drawable/home_icon" />
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="Track &amp; Field Goals"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add"
+            android:id="@+id/add_goal"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txts_logs"
+        android:layout_below="@+id/plan_logs">
+
+        <TextView
+            android:id="@+id/viewtrack_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/viewTrack"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/txt_pr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewtrack_Tv"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/field"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/txt_goals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_pr"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/goals"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/txt_upcoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_goals"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="View Or Delete Upcoming Goals"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_below="@+id/txts_logs"
+        android:layout_height="40dp"
+        android:id="@+id/linear_bar"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Date"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/txt_name"
+            android:textColor="#fff"
+            android:layout_gravity="center" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Meet"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_weight="1.5"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Event"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Goal"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Edit"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Del."
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/track_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_bar">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

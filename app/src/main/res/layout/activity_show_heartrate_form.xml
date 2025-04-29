@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#CB671C">
+
+
+        <ImageView
+            android:id="@+id/rhrbackIMV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/top_back_icon"
+            android:padding="10dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/headerTitleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolRL"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/rhrTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Resting Heart Rate"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/restingRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rhrTV"
+            android:layout_marginLeft="5dp"
+            android:padding="8dp">
+
+
+            <com.xcstats.views.custom.Textview_Light
+                android:id="@+id/txt_effort"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/rightthirdLL"
+                android:background="@drawable/textbutton_shape"
+                android:padding="12dp"
+                android:textColor="#000"
+                android:textSize="18dp" />
+<!--            android:hint="Text"-->
+
+
+            <LinearLayout
+                android:id="@+id/rightthirdLL"
+                android:layout_width="wrap_content"
+                android:background="@drawable/textbutton_shape"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingBottom="2dp">
+
+                        <LinearLayout
+                            android:id="@+id/down_arrowLL"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="6dp"
+                            android:background="#EDE9E9"
+                            android:layout_marginRight="3dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="23dp"
+                                android:layout_height="23dp"
+                                android:padding="3dp"
+                                android:src="@drawable/minus" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/up_arrowLL"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="#EDE9E9"
+                            android:gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="6dp">
+
+                                  <ImageView
+                                    android:layout_width="23dp"
+                                    android:padding="3dp"
+                                    android:layout_height="23dp"
+                                    android:src="@drawable/plus" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/rhrnotesTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restingRL"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Notes"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <com.xcstats.views.custom.Edittext_light
+            android:id="@+id/notesET"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/rhrnotesTv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/textbutton_shape"
+            android:gravity="start"
+            android:hint="Add notes"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:padding="5dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textAlignment="textStart"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notesET"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="30dip"
+                android:layout_weight="1"
+                android:background="@drawable/selector_button"
+                android:text="SUBMIT"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="30dip"
+                android:layout_weight="1"
+                android:background="@drawable/selector_button"
+                android:text="DELETE"
+                android:textColor="#fff"
+                android:visibility="invisible" />
+
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="30dip"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_button"
+                android:text="CANCEL"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_planned__absence"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xcstats.views.Activites.PlannedAbsence">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_bar">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/plan_logs"
+            android:background="#CB671C"
+            android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_bckhome"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@drawable/home_icon" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:text="Planned Absence"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/add"
+            android:id="@+id/add_planabsence" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listed_plan"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/top_bar">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txt_previous"
+            android:layout_marginTop="15dp"
+            android:text="Previously Entered Planned Absences"
+            android:textSize="18dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            android:text="Listed Below are the planned absences from 30 days  ago forward:"
+            android:layout_below="@+id/txt_previous"
+            android:layout_marginTop="15dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/relative_list"
+        android:layout_below="@+id/listed_plan">
+
+
+
+        <LinearLayout
+            android:id="@+id/workout_days"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:background="#000">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.8"
+                android:text="Date"
+                android:textColor="#fff"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:text="Reason"
+                android:gravity="center"
+                android:id="@+id/txt_reason"
+                android:textColor="#fff"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:text="Submitted On"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="Delete"
+                android:textColor="#fff"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Planabsence"
+        android:layout_below="@+id/relative_list">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>

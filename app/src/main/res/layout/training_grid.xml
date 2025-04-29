@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/textLL"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvlog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text1TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="m1 : dd"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/addTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="  Add"
+                android:layout_marginTop="-15dp"
+                android:textColor="#4169e1"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/text2TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="m1 : dd"
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txtCN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="1dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/text3TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="m1 : dd"
+                android:textColor="@android:color/black"
+                android:textSize="9dp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="14dp"
+            android:id="@+id/imageIV"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/image_icon">
+
+        </ImageView>
+
+    </FrameLayout>
+
+
+</LinearLayout>
+

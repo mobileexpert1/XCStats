@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".views.Activites.CoachAnnouncementsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cross_country">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="#CB671C"
+            android:layout_height="?attr/actionBarSize">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_crosshome"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:background="@drawable/home_icon" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:text="Coach Announcements"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cross_goals"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+       android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/cross_country"
+        android:background="#000">
+
+        <com.xcstats.views.custom.Textview_Simple
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+
+            android:text="Posted Date"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
+
+        <com.xcstats.views.custom.Textview_Simple
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:text="Posted By"
+            android:gravity="center"
+            android:id="@+id/txt_reason"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
+
+        <com.xcstats.views.custom.Textview_Simple
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:text="Subject"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <com.xcstats.views.custom.Textview_Simple
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/announcementsRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cross_goals"
+        android:layout_marginLeft="5dp" />
+
+
+
+
+
+</RelativeLayout>

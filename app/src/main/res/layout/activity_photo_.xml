@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_photo_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context="com.xcstats.views.Activites.PhotoActivity">
+
+    <RelativeLayout
+        android:id="@+id/training_logs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1Affffff">
+
+
+            <ImageView
+                android:id="@+id/img_backHM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/top_back_icon"
+                android:padding="10dp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="Photo"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_below="@+id/training_logs"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Your Photo is viewable only by your coaches." />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/profilep"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#CB671C">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="#fff" />
+
+
+        <ImageView
+            android:id="@+id/image_cancel"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/cros"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/profilep"
+        android:background="@drawable/photo_profile">
+
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/relative_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <FrameLayout
+                android:id="@+id/photoPF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/user_image" />
+
+
+            <ImageView
+                android:id="@+id/add_images"
+                android:layout_width="25dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="61dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/plus"/>
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+        </FrameLayout>
+        <Button
+            android:id="@+id/btn_done_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/frame"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/selector_button"/>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

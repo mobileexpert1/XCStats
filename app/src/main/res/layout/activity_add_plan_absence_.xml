@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_plan_absence_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xcstats.views.Activites.AddPlanAbsenceActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/training_logs"
+        android:background="#CB671C"
+        android:layout_height="?attr/actionBarSize">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_home"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@drawable/top_back_icon" />
+
+
+        <com.xcstats.views.custom.Textview_Simple
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" Add Planned Absence"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/training_logs">
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:id="@+id/calendar1"
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/linear"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/calendar1">
+
+
+                <com.xcstats.views.custom.Textview_Simple
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#000"
+                    android:text="Select Coaches to Notify"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_add"
+                android:layout_below="@+id/linear">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/list_add"
+                android:id="@+id/relative_select"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/textbutton_shape"
+                android:layout_height="wrap_content">
+
+
+                <Spinner
+                    android:id="@+id/spinner_selectreason"
+                    style="@style/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp">
+
+
+                </Spinner>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/workoutTV"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/graduation_img"
+                    android:text="Select a Reason"
+                    android:layout_gravity="center_vertical"
+
+                    android:textSize="16dp"
+                    android:visibility="visible" />
+
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+
+                    android:layout_gravity="right|center|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/spindrop"
+                    />
+
+            </FrameLayout>
+
+
+
+            <!--
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@drawable/textbutton_shape"
+                            android:id="@+id/relative_select"
+                            android:layout_below="@+id/list_add">
+
+
+                            <com.xcstats.views.custom.Textview_Simple
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16dp"
+                                android:text=""/>
+
+
+                            <Spinner
+                                style="@style/spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:id="@+id/spinner_selectreason"
+                                android:gravity="center_horizontal"
+                                android:layout_alignParentRight="true">
+
+
+
+                            </Spinner>
+
+
+                        </RelativeLayout>
+
+            -->
+
+
+
+            <com.xcstats.views.custom.Edittext_light
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/edit_notes"
+                android:layout_below="@+id/relative_select"
+                android:hint="Add note"
+                android:gravity="start"
+                android:padding="5dp"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:background="@drawable/textbutton_shape"
+                android:layout_alignParentRight="true" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/edit_notes">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+
+                    <com.xcstats.views.custom.Button_simple
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NOTIFY COACH"
+                        android:layout_weight="1.5"
+                        android:id="@+id/notifySubmit"
+                        android:textColor="#fff"
+                        android:layout_marginTop="30dip"
+                        android:layout_marginLeft="15dip"
+                        android:background="@drawable/selector_button"/>
+
+                    <com.xcstats.views.custom.Button_simple
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CANCEL"
+                        android:layout_weight="1.5"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/btn_cancel"
+                        android:textColor="#fff"
+                        android:layout_marginTop="30dip"
+                        android:layout_marginLeft="15dip"
+                        android:background="@drawable/selector_button"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+       <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#CB671C"
+            android:id="@+id/relative_close">
+
+
+            <com.xcstats.views.custom.Textview_Simple
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Review Results"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"/>
+
+
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/cros"/>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/relative_date"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                   android:layout_alignParentLeft="true"
+                    android:id="@+id/txt_date"
+                    android:textSize="18dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/date"
+                    android:layout_alignParentRight="true"
+                    android:textSize="18dp"/>
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/relative_meet"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meet"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/txt_meet"
+                    android:textSize="18dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/meet"
+                    android:layout_alignParentRight="true"
+                    android:textSize="18dp"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/relative_event"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/txt_event"
+                    android:textSize="18dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/event"
+                    android:layout_alignParentRight="true"
+                    android:textSize="18dp"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/relative_goal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Goal"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/txt_goal"
+                    android:textSize="18dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/goal"
+                    android:layout_alignParentRight="true"
+                    android:textSize="18dp"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/relative_result"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Result"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/txt_result"
+                    android:textSize="18dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/result"
+                    android:layout_alignParentRight="true"
+                    android:textSize="18dp"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/relative_notes"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pre-Notes"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/txt_notes"
+                    android:textSize="18dp"/>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/preNT"
+                    android:layout_alignParentRight="true"
+                    android:textSize="18dp"/>
+
+
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/relative_postnotes">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Post-Event Notes"
+                    android:layout_weight="1"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/txt_postnotes"
+                    android:textSize="18dp"/>
+
+
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:background="@drawable/textbutton_shape"
+                    android:layout_height="60dp"
+                    android:gravity="start"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:cursorVisible="false"
+                    android:id="@+id/notesEt"
+                    android:layout_alignParentRight="true"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_submit"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="70dp"
+                android:layout_gravity="center"
+                android:text="SUBMIT"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/selector_button"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
